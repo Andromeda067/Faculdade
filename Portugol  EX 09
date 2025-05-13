@@ -1,0 +1,32 @@
+programa
+{
+    inteiro matriz[5][5], x, i, j
+    
+    funcao inicio()
+    {
+
+        para (i = 0; i < 5; i++) {
+            para (j = 0; j < 5; j++) {
+                escreva("Digite o elemento [", i, "][", j, "] da matriz: ")
+                leia(matriz[i][j])
+            }
+        }
+
+        escreva("Digite o número x: ")
+        leia(x)
+        
+        para (i = 0; i < 5; i++) {
+            para (j = 0; j < 5; j++) {
+                matriz[i][j] = matriz[i][j] * x
+            }
+        }
+
+        escreva("Matriz modificada (multiplicada por ", x, "):\n")
+        para (i = 0; i < 5; i++) {
+            para (j = 0; j < 5; j++) {
+                escreva(matriz[i][j], "\t")
+            }
+            escreva("\n")
+        }
+    }
+}
