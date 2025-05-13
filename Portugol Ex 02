@@ -1,0 +1,30 @@
+programa
+{
+    // Declaração de variáveis
+    real nota1, nota2, nota3, media, soma_ponderada
+    inteiro peso1, peso2, peso3, soma_pesos
+    
+    funcao inicio()
+    {
+        // Definição dos pesos
+        peso1 = 2
+        peso2 = 3
+        peso3 = 5
+        soma_pesos = peso1 + peso2 + peso3
+        
+        // Entrada de dados
+        escreva("Digite a primeira nota: ")
+        leia(nota1)
+        escreva("Digite a segunda nota: ")
+        leia(nota2)
+        escreva("Digite a terceira nota: ")
+        leia(nota3)
+        
+        // Processamento
+        soma_ponderada = (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)
+        media = soma_ponderada / soma_pesos
+        
+        // Saída de dados
+        escreva("A média ponderada é: ", media)
+    }
+}
