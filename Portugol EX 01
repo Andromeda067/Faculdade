@@ -1,0 +1,18 @@
+programa
+{
+    // Declaração de variáveis
+    real numero, dobro
+    
+    funcao inicio()
+    {
+        // Entrada de dados
+        escreva("Digite um número inteiro: ")
+        leia(numero)
+        
+        // Processamento
+        dobro = numero * 2
+        
+        // Saída de dados
+        escreva("O dobro de ", numero, " é: ", dobro)
+    }
+}
