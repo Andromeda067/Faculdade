@@ -1,0 +1,21 @@
+programa
+{
+    inteiro matriz[5][5], soma_diagonal, i, j
+    
+    funcao inicio()
+    {
+        para (i = 0; i < 5; i++) {
+            para (j = 0; j < 5; j++) {
+                escreva("Digite o elemento [", i, "][", j, "] da matriz: ")
+                leia(matriz[i][j])
+            }
+        }
+        
+        soma_diagonal = 0
+        para (i = 0; i < 5; i++) {
+            soma_diagonal = soma_diagonal + matriz[i][i]
+        }
+        
+        escreva("A soma da diagonal principal é: ", soma_diagonal)
+    }
+}
