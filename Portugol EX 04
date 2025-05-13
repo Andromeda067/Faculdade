@@ -1,0 +1,22 @@
+programa
+{
+    inteiro num_1, num_2, num_3
+    
+    funcao inicio()
+    {
+        escreva("Informe o Primeiro numero: ")
+        leia(num_1)
+        escreva("Informe o Segundo numero: ")
+        leia(num_2)
+        escreva("Informe o Terceiro numero: ")
+        leia(num_3)
+
+        se (num_1 <= num_2 e num_1 <= num_3) {
+            escreva("O menor numero e: ", num_1)
+        } senao se (num_2 <= num_1 e num_2 <= num_3) {
+            escreva("O menor numero e: ", num_2)
+        } senao {
+            escreva("O menor numero e: ", num_3)
+        }
+    }
+}
